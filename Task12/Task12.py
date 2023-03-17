@@ -10,22 +10,23 @@ sum_x_y = int(input('Какова сумма чисел, которые зага
 while sum_x_y >= 1000 and sum_x_y < 0:
     print('Введите число меньшее или равное 1000, но больше 0 ')
     sum_x_y = int(input('Какова сумма чисел, которые загадал Петя? '))
-multiplication_x_y = int(input('Каково произведение чисел, которые загадал Петя? '))
+multiplication_x_y = int(
+    input('Каково произведение чисел, которые загадал Петя? '))
 while multiplication_x_y >= 1000 and multiplication_x_y < 0:
     print('Введите число меньшее или равное 1000, но больше 0 ')
-    multiplication_x_y = int(input('Каково произведение чисел, которые загадал Петя? '))
+    multiplication_x_y = int(
+        input('Каково произведение чисел, которые загадал Петя? '))
 
 for i in range(sum_x_y + multiplication_x_y):
     if i == (sum_x_y * i - multiplication_x_y)**0.5:
-        print(i) 
-     
+        print(i)
 
 
+# Идеальное решение
 
-
-
-
-
-
-
-
+# x = int(input())
+# y = int(input())
+# for i in range(x):
+#     for j in range(y):
+#         if x == i + j and y == i * j:
+#             print(i, j)
